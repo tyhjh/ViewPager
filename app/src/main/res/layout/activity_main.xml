@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yorhp.viewpager.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <myview.CycleViewPager
+            android:id="@+id/vp_home"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:autoScrollInterval="2000"
+            app:pageSwitchDuration="800">
+
+        </myview.CycleViewPager>
+
+        <myview.ViewPagerIndicator
+            android:id="@+id/indicator2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            app:indicatorNormal="@drawable/point1"
+            app:indicatorSelected="@drawable/point2" />
+
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
